@@ -6,7 +6,11 @@ import axios from 'axios'
 
 const Home: NextPage = () => {
   const fetchAPI = async () => {
-    const res = await axios.get(``)
+    const res = await axios.get(`https://newone-api.azurewebsites.net/api/hello?code=WwPkgjivLXLhDSYTMYMrnP5ScnhgBlbXBu5SRXkD7BqeAzFu5IyHDw==`)
+    console.log(res.data(), 'test res')
+  }
+  const fetchAPI2 = async () => {
+    const res = await axios.get(`/api/hello`)
     console.log(res, 'test res')
   }
   return (
@@ -26,6 +30,12 @@ const Home: NextPage = () => {
             onClick={fetchAPI}
           >
             test api
+          </button>
+
+          <button
+            onClick={fetchAPI2}
+          >
+            test api2
           </button>
 
         </main>
