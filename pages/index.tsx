@@ -2,8 +2,13 @@ import type { NextPage } from 'next'
 import Layout from './components/Layout'
 import styles from '../styles/Home.module.css'
 import Head from 'next/head';
+import axios from 'axios'
 
 const Home: NextPage = () => {
+  const fetchAPI = async () => {
+    const res = await axios.get(``)
+    console.log(res, 'test res')
+  }
   return (
     <Layout>
       <div className={styles.container}>
@@ -17,6 +22,11 @@ const Home: NextPage = () => {
           <h1 className={styles.title}>
             test app
           </h1>
+          <button
+            onClick={fetchAPI}
+          >
+            test api
+          </button>
 
         </main>
 
