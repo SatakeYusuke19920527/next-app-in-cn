@@ -7,7 +7,7 @@ import axios from 'axios'
 const Home: NextPage = () => {
   const fetchAPI = async () => {
     const res = await axios.get(`https://nice-plant-0bb839200.1.azurestaticapps.net/api/hello?code=WwPkgjivLXLhDSYTMYMrnP5ScnhgBlbXBu5SRXkD7BqeAzFu5IyHDw==`)
-    console.log(res.data(), 'test res')
+    console.log(res, 'test res')
   }
   const fetchAPI2 = async () => {
     const res = await axios.get(`/api/hello`)
