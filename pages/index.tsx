@@ -9,10 +9,6 @@ const Home: NextPage = () => {
     const res = await axios.get(`https://nice-plant-0bb839200.1.azurestaticapps.net/api/hello?code=WwPkgjivLXLhDSYTMYMrnP5ScnhgBlbXBu5SRXkD7BqeAzFu5IyHDw==`)
     console.log(res, 'test res')
   }
-  const fetchAPI2 = async () => {
-    const res = await axios.get(`/api/hello`)
-    console.log(res, 'test res')
-  }
   return (
     <Layout>
       <div className={styles.container}>
@@ -30,12 +26,6 @@ const Home: NextPage = () => {
             onClick={fetchAPI}
           >
             test api
-          </button>
-
-          <button
-            onClick={fetchAPI2}
-          >
-            test api2
           </button>
 
         </main>
