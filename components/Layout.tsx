@@ -23,7 +23,7 @@ const Layout = ({
             <div className="flex space-x-4">
               <Link href="/">
                 <a className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">
-                  Home
+                  NewOne
                 </a>
               </Link>
               <Link href="/test-page">
